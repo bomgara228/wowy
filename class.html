@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*1. Спросить у пользователя его имя. Спросить у пользователя:
+        сколько раз вывести его имя. Вывести в консоль это имя
+        столько раз, сколько сказал пользователь
+        let aga = prompt('Введите имя');
+        let afa = prompt('Сколько раз вывести');
+        for (let i = 1; i <= afa; i++) {
+            console.log(i + '.' + aga);
+        }*/
+
+        /*2. Попросить у пользователя ввести какое-то число (от 1 до 100).
+        Вывести в консоль все четные числа от 1 до введенного
+        пользователем числа.
+        let aga = prompt('Введите число от 1 до 100');
+        for (let i = 1; i <= aga; i++) {
+            if (i %2 == 0) {
+                console.log(i);
+            }
+        }*/
+
+        /*3. Пользователь вводит два числа. Если первое число меньше
+        второго, вывести сумму этих чисел, если наоборот, первое
+        число больше второго, вывести их разность.
+        let a = parseInt(prompt('Введите a'));
+        let b = parseInt(prompt('Введите b'));
+        if (a < b) {
+            console.log(a+b);
+        } else {
+            console.log(a-b);
+        }*/
+
+        /*4. Пользователь вводит три числа. Напечатать эти числа по
+        возрастанию;
+        let a = parseInt(prompt('Введите a'));
+        let b = parseInt(prompt('Введите b'));
+        let c = parseInt(prompt('Введите c'));
+        if (a <b && a < c)  {
+            console.log(a);
+            if ( b<c) {
+                console.log(b);
+                console.log(c);
+            } else {
+                console.log(c);
+                console.log(b);
+            }
+        } 
+        if (b < c && b <a ) {
+            console.log(b);
+            if (c<a) {
+                console.log(c);
+                console.log(a);
+            } else {
+                console.log(a);
+                console.log(c);
+            }
+        }
+        if (c < a && c <b) {
+            console.log(c);
+            if ( a<b) {
+                console.log(a);
+                console.log(b);
+            } else {
+                console.log(b);
+                console.log(a);
+            }
+        }*/
+
+        /*5. Попросить у пользователя ввести какое-то число. Спросить у
+        пользователя, сколько раз сложить это число само с собой.
+        Сложить введенное число само с собой нужное количество
+        раз и вывести результат. Например, пользователь ввел
+        тройку и попросил сложить ее четыре раза. Программа
+        должна вывести в консоль: 12. (так как 3 + 3 +3+ 3 = 12).
+        let a = parseInt(prompt('Введите число'));
+        let b = prompt('Сколько раз сложить');
+        console.log(a*b);*/
+
+        /*6. Получить у пользователя 3 числа. Сохранить их в
+        переменные. Вывести на печать, самое большое и самое
+        маленькое число;
+        let a = parseInt(prompt('Введите a'));
+        let b = parseInt(prompt('Введите b'));
+        let c = parseInt(prompt('Введите c'));
+        if (a <b && a < c)  {
+            if ( b<c) {
+                console.log(c);
+                console.log(a);
+            } else {
+                console.log(b);
+                console.log(a);
+            }
+        } 
+        if (b < c && b <a ) {
+            if (c<a) {
+                console.log(a);
+                console.log(b);
+            } else {
+                console.log(c);
+                console.log(b);
+            }
+        }
+        if (c < a && c <b) {
+            if ( a < b) {
+                console.log(b);
+                console.log(c);
+            } else {
+                console.log(a);
+                console.log(c);
+            }
+        }*/
+
+        /*7. Попросить пользователя вводить числа до тех пор, пока
+        пользователь не введет ноль. Если число, вводимое
+        пользователем, больше пяти, складывать его с ранее
+        введенными числами, большими пяти, и в итоге вывести
+        сумму всех чисел, больших 5.
+        let aga = 0;
+        let a;
+        
+        do {
+            a = parseInt(prompt('Вводите числа или напишите 0 чтобы остановить'));
+            if (a > 5) {
+                aga += a;
+            }
+            
+            
+        }   while ( a!= 0)
+        console.log('Сумма всех чисел больше пяти:' + aga);*/
+
+        /*8. Пользователь вводит какое-то число (от 1 до 10). Умножать на
+        2 и печатать (с помощью console.log) это число до тех пор,
+        пока оно не станет больше 100. Тогда прекратить печать;
+        let a = parseInt(prompt('Введите a от 1 до 10'));
+        while (a < 100) {
+            a = a*2;
+            console.log(a);
+        }*/
+
+        /*9. Спросить у пользователя, сколько чисел он хочет ввести. В
+        цикле заставить пользователя вводить любые цифры столько
+        раз, сколько он написал, и в итоге вывести на печать
+        максимальную из этих цифр.
+        let a = parseInt(prompt('Введите сколько чисел хотите ввести'))
+        let b;
+        let c = 0;
+        for (let  i = 1; i <= a; i++) {
+            b = parseInt(prompt('Введите число'));
+            if ( b > c) {
+                c = b;
+            }
+        }
+        console.log(c);*/
+
+        /*10. Пользователь ввел два числа. Программа должна
+        напечатать все числа между двумя этими числами (не
+        включая их). Не важно, что первое из введенных
+        пользователем чисел будет больше второго, программа все
+        равно должна напечатать все числа, расположенные между
+        этими двумя числами. Т.е., например, если пользователь ввел
+        10 и 7, программа должна напечатать 8 и 9.
+        let a = parseInt(prompt('Введите a'));
+        let b = parseInt(prompt('Введите b'));
+        if (a < b) {
+            for (let i = a+1; i <b; i++) {
+                console.log(i);
+            }
+        } else if ( a >  b) {
+            for (let i = a-1; i >b; i--) {
+                console.log(i);
+            }
+        }*/
+
+        /*11.Вывести в консоль шахматную доску. Запрашивать у
+        пользователя количество клеток (от 5 до 100) – т.е. в
+        зависимости от числа, введенного пользователем, программа
+        строит доску нужного размера. (белая клетка – пробел,
+        черная клетка – символ ‘#’).
+        let a = parseInt(prompt('Введите количество клеток от 5 до 100'));
+        let n = ' ';
+        let b = '#';
+        for (let i = 1; i <= a; i++) {
+            if (i % 2 == 0) {
+                console.log(n); 
+            } else {
+                console.log(b); 
+            }
+        }*/
+
+        /*12. Реализовать игру 5 из 36. Машина загадывает 5
+        случайных (неповторяющихся!) чисел в диапазоне от 1 до 36.
+        Подсказка: для генерации случайного числа используем
+        метод Math.random(); числа храним в переменных (так как
+        пока не знаем других сущностей для хранения данных). Затем
+        просим у пользователя ввести 5 цифр и тоже сохраняем их в
+        переменные. Проверять числа пользователя на повторы не
+        надо (предполагаем, что пользователь корректно вводит
+        данные). После этого машина должна вывести кол-во
+        совпавших цифр и сами эти цифры.*/
+        let masin1 = 0;
+        let masin2 = 0;
+        let masin3 = 0;
+        let masin4 = 0;
+        let masin5 = 0;
+        do {
+            masin1 = Math.floor(Math.random() * (36)) +1;
+            masin2 = Math.floor(Math.random() * (36)) +1;
+            masin3 = Math.floor(Math.random() * (36)) +1;
+            masin4 = Math.floor(Math.random() * (36)) +1;
+            masin5 = Math.floor(Math.random() * (36)) +1;
+        } while (masin1 == masin2 || masin1 == masin3 || masin1 == masin4 || masin1 == masin5 || masin2 == masin3 || masin2 == masin4 || masin2 == masin5 || masin3 == masin4 || masin3 == masin5 || masin4 == masin5 )
+        let a = parseInt(prompt('Введите a'));
+        let b = parseInt(prompt('Введите b'));
+        let c = parseInt(prompt('Введите c'));
+        let d = parseInt(prompt('Введите d'));
+        let e = parseInt(prompt('Введите e'));
+        if (a == masin1 || a == masin2 || a == masin3 || a == masin4 || a == masin5) {
+            console.log(a);
+        }
+        if (b == masin1 || b == masin2 || b == masin3 || b == masin4 || b == masin5) {
+            console.log(b);
+        }
+        if (c == masin1 || c == masin2 || c == masin3 || c == masin4 || c == masin5) {
+            console.log(c);
+        }
+        if (d == masin1 || d == masin2 || d == masin3 || d  == masin4 || d == masin5) {
+            console.log(d);
+        }
+        if (e == masin1 || e == masin2 || e == masin3 || e == masin4 || e == masin5) {
+            console.log(e);
+        }
+    </script>
+</body>
+</html>

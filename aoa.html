@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Ветвление */
+        let a = '3';
+        let b = '3';
+        if (a === b) {
+            console.log('Числa равны');;
+        } else {
+            console.log('Числа не равны');
+        }
+
+        value1 = +prompt('Введите число:');
+        if (value1 >0) {
+            console.log('Число больше 0')
+        } else if (value1 == 0) {
+            console.log('Число равно 0')
+        } else {
+            console.log('Число меньше 0')
+        }
+
+        /* && - и  || - или | нет:*/
+        let val2 = 17;
+        if (val2 >= 5 && val2 <= 10 || val2 >= 15 && val2 <=20 ) {
+            console.log('Число находится в указанных диапазонах!');
+        }
+
+        let val3 = 4;
+        if (val3) {
+            console.log('Число не равно 0!');
+        }
+
+        /*Приведение к false:
+        0 Nan undefined null ''*/
+
+        /*switch*/
+        let numberDay = parseInt(prompt('Введите номер дня недели:'));
+        switch (numberDay) {
+            case 1:
+                console.log('Понедельник');
+                break;
+            case 2:
+                console.log('Вторник');
+                break;
+            case 3:
+                console.log('Среда');
+                break;
+            case 4:
+                console.log('Четверг');
+                break;
+            case 5:
+                console.log('Пятница');
+                break;
+            case 6:
+                console.log('Суббота');
+                break;
+            case 7:
+                console.log('Воскресенье');
+                break;
+            default:
+                console.log('Не корректное значение!')
+        }
+
+        /* - тернарный оператор*/
+        let result = (test % 2 == 0) ? ' Четное' : 'Не четное';
+        console.log(result);
+
+        /*Циклы*/
+        /*for - классика*/
+        for (let i = 1; i <= 10 ; i++) {
+            console.log(i);
+        }
+        for (let i = 1, j = 10; i != j ; i++, j--) {
+            console.log(i , j);
+        }
+
+        label1: for (let i = 1; i < 10; i++) {
+            for (let j = 1; j <=10;j++){
+                console.log(i,j );
+                break label1; 
+                continue label1;
+            }
+        }
+
+        /*Цикл с предусловием:*/
+        let count1 = 0;
+        while (count < 10) {
+            console.log(count++);
+            if (count == 5) {
+                break;
+            }
+        }
+        /*Цикл с постусловием:*/
+        let count2 = 0
+        do {
+            console.log(count);
+            count++;
+        } while (count2 <=10);
+    </script>
+</body>
+</html>
